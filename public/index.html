@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo Guru</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+
+
+    </header>
+    <!-- Header Section for mobile -->
+    <header id="header" class="fixed  w-full z-50 bg-transparent  transition-all duration-300">
+
+        <div class="lg:container mx-auto flex justify-between items-center py-4 px-4  ">
+            <div class="flex gap-5">
+                <!-- Hamburger Button -->
+                <button id="menu-toggle" class="block md:hidden text-2xl">
+                    <span id="icon-hamburger" class="block">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7" />
+                        </svg>
+                    </span>
+                    <span id="icon-close" class="hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </span>
+                </button>
+
+
+                <!-- Logo Section -->
+                <div class="flex items-center animate-slide-right">
+                    <img src="./images/weblogo.png" alt="logo" class="w-32">
+                </div>
+
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav id="menu"
+                class="hidden md:flex flex-col md:flex-row md:space-x-8  max-md:w-11/12  bg-white max-md:rounded-xl    md:bg-transparent md:static absolute top-20 left-4    text-center shadow-md md:shadow-none">
+                <ul
+                    class="md:flex space-y-4 md:space-y-0 md:space-x-4 lg:space-x-8 items-center  max-md:py-2 max-md:px-4 ">
+                    <li><a href="#section-home" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Home</a></li>
+                    <li><a href="#section-feature" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Features</a>
+                    </li>
+                    <li><a href="#section-demo" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Demo</a></li>
+                    <li><a href="#section-testimonial"
+                            class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Testimonials</a></li>
+                    <li><a href="#section-pricing" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Pricing</a>
+                    </li>
+                    <li><a href="#section-FAQ" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">FAQ</a></li>
+                    <!-- <li><a href="#about" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">About</a></li> -->
+                    <li><a href="#section-contact" class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Contact
+                            Us</a></li>
+                    <li class="border border-[#1E2630] p-2"><a href="#section-download"
+                            class="text-[#1E2630] md:text-md lg:text-lg hover:text-gray-500">Download</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="">
+        <div>
+
+            <!-- Section 1 -->
+            <section id="section-home"  class="bg-cover  bg-center bg-no-repeat min-h-screen animate-fade-in "
+                style="background-image: url('./images/topbackground.png');">
+                <div class="container mx-auto h-screen justify-center items-center max-md:flex-col flex w-full ">
+                    <div  id="section-1-image-div" class="flex w-full md:w-2/5 relative  ">
+                        <div class="w-full overflow-hidden">
+                            <div id="slider" class="flex gap-4  transition-transform duration-500">
+                                <img src="./images/card1.png" alt="card-1" class="w-full mx-auto px-8 ">
+                                <img src="./images/card2.png" alt="card-2" class="w-full mx-auto px-8 ">
+                                <img src="./images/card3.png" alt="card-3" class="w-full mx-auto px-8 ">
+                                <img src="./images/card4.png" alt="card-4" class="w-full mx-auto px-8 ">
+                            </div>
+                        </div>
+
+                        <!-- Image Indicators -->
+                        <div  class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                            <div data-index="0" class="indicator w-2 h-2  bg-gray-300 cursor-pointer"></div>
+                            <div data-index="1" class="indicator w-2 h-2  bg-gray-300 cursor-pointer"></div>
+                            <div data-index="2" class="indicator w-2 h-2  bg-gray-300 cursor-pointer"></div>
+                            <div data-index="3" class="indicator w-2 h-2  bg-gray-300 cursor-pointer"></div>
+                        </div>
+                    </div>
+                    <div class="flex w-full md:w-3/5  px-4 md:px-8 ">
+                        <div id="section-1-text-div" class="flex flex-col  mx-auto ">
+                            <div class="flex max-lg:flex-col text-[#0B89C4] gap-2 md:gap-4 text-nowrap ">
+                                <span class="text-3xl md:text-5xl font-normal">Welcome to</span><span
+                                    class="text-3xl md:text-5xl font-bold">ROBO GURU</span>
+                            </div>
+                            <div class="flex flex-col  text-[#1E2630] text-lg font-light justify-center">
+                                <div class="font-semibold my-4 " style="word-spacing: 0.1rem;">
+                                    Ask, Learn, and Grow Anytime, Anywhere
+                                </div>
+                                <div>
+                                    Master any subject with instant AI guidance. RoboGuru answers your questions in
+                                    seconds-whether you
+                                    type or speak-so you can study
+                                    smarter, track progress,and stay motivated
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section id="section-feature"  class="bg-gray-200 animate-fade-in">
+                <div class="container mx-auto py-12 px-4">
+                    <!-- Heading Section -->
+                    <div  id="section-2-text-heading-div" class="flex flex-col mb-8 w-full justify-center items-center">
+                        <div class="text-[#1E2630] text-3xl md:text-5xl  font-bold mb-4">Our App Features</div>
+                        <div class="text-[#1E2630] text-lg font-light max-w-[500px] my-4">
+                            Experience the power of AI tutoring, interactive lessons,
+                            and personalized progress—all in one easy-to-use platform.
+                        </div>
+                    </div>
+
+                    <!-- Features Section -->
+                    <div id="section-2-image-div" class="max-md:flex-col flex w-full">
+                        <div class="flex max-md:items-center items-end w-full md:w-1/2 ">
+                            <div class="flex items-end">
+                                <div>
+                                    <img src="./images/robo.png" alt="robo">
+                                </div>
+                                <div>
+                                    <img src="./images/robophone.png" alt="robo-phone">
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div id="section-2-text-div" class="flex w-full  md:w-1/2 justify-center items-center p-4">
+                            <div>
+                                <div class="space-y-8 text-[#1E2630]">
+                                    <!-- AI Chat & Voice Mode Section -->
+                                    <div>
+                                        <h2 class="font-bold  text-[#1E2630] text-lg mb-2">AI Chat & Voice Mode</h2>
+                                        <p class="font-thin text-[#1E2630]">
+                                            Ask any question in text or simply speak it aloud. RoboGuru’s advanced AI
+                                            tutor instantly provides clear explanations, examples, and practice
+                                            prompts—so you can learn faster and more conveniently.
+                                        </p>
+                                    </div>
+
+                                    <!-- Personalized Dashboard Section -->
+                                    <div>
+                                        <h2 class="font-bold text-[#1E2630] text-lg mb-2">Personalized Dashboard</h2>
+                                        <p class="font-thin text-[#1E2630]">
+                                            Stay organized with a dashboard tailored to your goals. See real-time
+                                            progress, track completed chapters, and get customized suggestions on what
+                                            to study next.
+                                        </p>
+                                    </div>
+
+                                    <!-- Subject & Chapter Navigation Section -->
+                                    <div>
+                                        <h2 class="font-bold text-[#1E2630] text-lg mb-2">Subject & Chapter Navigation
+                                        </h2>
+                                        <p class="font-thin text-[#1E2630]">
+                                            Quickly find subjects or topics for your grade level. Each chapter comes
+                                            with key concepts, practice questions, and tips to help you understand even
+                                            the toughest material.
+                                        </p>
+                                    </div>
+
+                                    <!-- Progress Tracking & Analytics Section -->
+                                    <div>
+                                        <h2 class="font-bold  text-[#1E2630] text-lg mb-2">Progress Tracking & Analytics
+                                        </h2>
+                                        <p class="font-thin text-[#1E2630]">
+                                            Monitor your learning journey through visual progress bars and detailed
+                                            analytics. Identify areas where you excel or need extra practice—and watch
+                                            your mastery grow over time.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <Button
+                                            class="flex px-8 py-4 border border-[#1E2630] font-normal text-[#1E2630]">
+                                            Download App
+                                        </Button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+            <!-- Section 3 -->
+            <section id="section-demo"  class="relative h-full w-full animate-fade-in">
+                <!-- Background Image -->
+                <div class="absolute inset-0">
+                    <img src="./images/promovideo.png" alt="promovideo" class="w-full h-full object-cover" />
+                </div>
+
+                <!-- Gradient Overlay -->
+                <div class="absolute inset-0 bg-gradient-to-r from-[#63A7D4] to-[#F295BE] opacity-90"></div>
+
+                <!-- Text Content -->
+                <div class="relative z-10 flex items-center justify-center h-full">
+                    <div class="flex flex-col justify-center items-center my-24">
+                        <div id="section-3-image-div">
+                            <img src="./images/Vector.png" alt="play">
+                        </div>
+                        <div id="section-3-text-div" class="flex flex-col justify-center items-center px-4">
+                            <div class="text-white text-center text-3xl md:text-5xl  font-bold my-4">
+                                Watch Promo Video
+                            </div>
+                            <div class="text-white text-lg font-thin mb-4 text-center">
+                                Get a glimpse of how AI transforms your learning—faster answers,
+                                interactive chapters, and real-time progress tracking.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- Section 4 -->
+            <section  class="bg-gray-200 py-12 px-4 animate-fade-in ">
+                <div class="container mx-auto relative ">
+                    <div class="flex mx-auto lg:w-4/5 overflow-hidden">
+                        <div id="carousel" class="flex transition-transform duration-500 justify-between h-[650px]">
+                            <img src="./images/Android Compact - 1.png" alt="card-1" class="w-96 px-4">
+                            <img src="./images/Android Compact - 2.png" alt="card-2" class="w-96 px-4">
+                            <img src="./images/Android Compact - 3.png" alt="card-3" class="w-96 px-4">
+                            <img src="./images/Android Compact - 4.png" alt="card-4" class="w-96 px-4">
+                            <img src="./images/Android Compact - 5.png" alt="card-5" class="w-96 px-4">
+                            <img src="./images/Android Compact - 6.png" alt="card-6" class="w-96 px-4">
+                            <img src="./images/Android Compact - 7.png" alt="card-4" class="w-96 px-4">
+                            <img src="./images/Android Compact - 8.png" alt="card-5" class="w-96 px-4">
+                            <img src="./images/Android Compact - 7.png" alt="card-6" class="w-96 px-4">
+                        </div>
+                    </div>
+                    <!-- Navigation Arrows -->
+                    <button id="prev"
+                        class="absolute top-1/2 left-0 transform -translate-y-1/2 border border-gray-300 p-2 bg-white hover:bg-stone-300">
+                        <img src="./images/left.png" alt="left">
+                    </button>
+                    <button id="next"
+                        class="absolute top-1/2 right-0 transform -translate-y-1/2 border border-gray-300 p-2 bg-white hover:bg-stone-300">
+                        <img src="./images/right.png" alt="right">
+                    </button>
+
+                    <!-- Image Indicators -->
+                    <div class="absolute  left-1/2 transform -translate-x-1/2 flex space-x-2">
+                        <div data-index="0" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                        <div data-index="1" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                        <div data-index="2" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                        <div data-index="3" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                        <div data-index="4" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                        <div data-index="5" class="indicate w-3 h-3 bg-gray-300 rounded-full cursor-pointer"></div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!-- Section 5 -->
+            <section id="section-download" class="bg-gradient-to-r from-[#63A7D4] to-[#F295BE] py-20 px-4 animate-fade-in">
+                <div id="section-5-container" class="container mx-auto ">
+                    <div id="section-5-text-div" class="mb-8 flex flex-col justify-center items-center">
+                        <div class="text-white text-3xl md:text-5xl  font-bold mb-4 text-center">
+                            <span class="font-normal">Get the App </span><span class="font-bold">Download</span>
+                        </div>
+                        <div class="text-white max-w-[500px] text-lg font-light text-center">
+                            Today stand AI answers on the go. Download RoboGuru
+                            for free and learn anytime, anywhere.
+                        </div>
+                    </div>
+                    <div class="flex gap-4 max-sm:flex-col justify-center items-center my-12">
+                        <div id="section-5-button-1">
+                            <button
+                                class="flex gap-2 py-2 px-4 rounded-lg bg-white shadow-lg justify-center items-center">
+                                <span>
+                                    <img src="./images/applestore.png" alt="apple-store" class="w-12">
+                                </span>
+                                <span class="text-[#1E2630]">Apple Store</span>
+
+                            </button>
+                        </div>
+                        <div id="section-5-button-2">
+                            <button
+                                class="flex gap-2 py-2 px-4 rounded-lg bg-white shadow-lg justify-center items-center">
+                                <span>
+                                    <img src="./images/playstore.png" alt="play-store" class="w-12">
+                                </span>
+                                <span class="text-[#1E2630]">Google Play</span>
+
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- Section 6 -->
+            <section id="section-FAQ" class="bg-white py-20 px-4">
+                <div class="container mx-auto">
+                    <div class="mb-8 flex flex-col justify-center items-center">
+                        <div class="text-3xl md:text-5xl  text-[#1E2630] font-bold mb-4 text-center">
+                            FAQ's
+                        </div>
+                        <div class="text-[#1E2630] max-w-[500px] text-xl font-thin text-center">
+                            Explore our FAQs for quick solutions and guidance.
+                        </div>
+                    </div>
+                    <div class="faq-container mx-auto max-w-5xl p-4">
+                        <!-- FAQ Items -->
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">1. What is RoboGuru?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            RoboGuru is an AI-driven learning platform that helps you explore academic subjects, ask questions, and deepen your understanding through instant explanations—available anytime, anywhere.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">2. How do I set up this app?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            Download the RoboGuru app from your preferred store (App Store or Google Play). Once installed, sign up or log in, select your class or grade level, and start exploring subjects right away.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">3. Does it cost anything to become a member?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            RoboGuru offers a free plan with limited AI queries and features. You can upgrade to a paid subscription for unlimited AI assistance, voice mode, and advanced progress tracking.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">4. What is your policy regarding privacy?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            We take data protection seriously. Your personal information is stored securely, and we never share it without your consent. Review our full Privacy Policy for details on data handling and security measures.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">5. Are there more help resources available?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            Yes! You can visit our in-app Help & Support section for FAQs, tutorials, and user guides. If you have additional questions, reach out via Contact Support or email us at support@roboguru.com.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">6. How does the AI Chat feature work?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            RoboGuru’s AI Chat uses natural language processing to understand your questions and provide clear, step-by-step explanations or practice prompts.
+                          </div>
+                        </div>
+                      
+                        <div class="faq-item border-b border-gray-300 mb-4 shadow-lg">
+                          <button
+                            class="faq-question flex justify-between items-center w-full py-3 px-4 text-gray-800 font-medium hover:bg-gray-200 transition"
+                            onclick="toggleAnswer(this)"
+                          >
+                            <div class="text-left">7. Do I need an internet connection?</div>
+                            <div class="toggle-symbol text-xl font-bold">+</div>
+                          </button>
+                          <div class="faq-answer hidden px-4 pb-3 text-gray-600">
+                            Yes, a stable internet connection is required for RoboGuru to fetch real-time AI responses and sync your progress data.
+                          </div>
+                        </div>
+                      </div>
+                      
+                      
+                      
+                </div>
+
+        </div>
+
+
+    </main>
+      <!-- Section 7 -->
+    <section id="section-contact" class="py-12 animate-fade-in ">
+        <div class="container mx-auto p-4 ">
+            <div  id="section-7-heading-text" class="text-[#1E2630] text-3xl md:text-5xl  font-bold mb-4 text-center">Contact Us</div>
+            <div class=" my-8  max-md:flex-col flex">
+                <div id="section-7-text-div" class="w-full md:w-1/2 flex flex-col  justify-center m-4 p-4">
+
+                    <div class="text-2xl md:text-4xl font-bold text-pink-400">ASK US</div>
+                    <div class="text-[#1E2630] text-3xl md:text-5xl  font-light">Anything</div>
+                    <div class="max-w-[500px]">
+                        <p class="text-lg text-gray-600 my-4 ">
+                            We'd love to hear from you! Whether you have questions, feedback, or inquiries, feel free to
+                            reach out to us.
+                        </p>
+                    </div>
+                </div>
+                <div id="section-7-form-div" class="w-full md:w-1/2">
+                    <div class="bg-white shadow-md rounded-lg p-6">
+                        <form>
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+                                <input type="text" id="name" name="name"
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                                <textarea id="message" name="message" rows="5"
+                                    class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    placeholder="Your Message" required></textarea>
+                            </div>
+                            <div class="flex w-full justify-center items-center">
+                                <button type="submit"
+                                    class="bg-slate-500 text-white font-bold py-4 px-12 rounded-md hover:bg-slate-600 focus:outline-none">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+    </section>
+      <!-- Section 8 -->
+    <!-- Footer -->
+    <footer  class="bg-gradient-to-r from-[#63A7D4] to-[#F295BE] py-12 md:py-20 px-4 animate-fade-in">
+        <section  class=" container mx-auto">
+            <!-- Header Section -->
+            <div id="section-8-heading-text" class="flex flex-col justify-center items-center animate-fade-in">
+                <div class="text-white text-3xl md:text-5xl font-bold mb-4 text-center">
+                    <span class="font-normal">Stay Connected </span><span class="font-bold">With Us</span>
+                </div>
+                <div class="text-white max-w-[500px] text-lg font-light text-center">
+                    We’re here to answer your questions and guide you every step of the way.
+                </div>
+            </div>
+
+            <!-- Links and Icons Section -->
+            <div class="flex w-full max-md:flex-col justify-between gap-4">
+                <div class="flex flex-col w-full md:w-2/3">
+                    <div  class="flex w-full py-8 px-4 text-white">
+                        <!-- Support Section -->
+                        <div id="section-8-support-div" class="w-1/3">
+                            <span class="text-xl font-bold mb-4 block">Support</span>
+                            <p class="text-md md:text-lg font-normal">About Us</p>
+                            <p class="text-md md:text-lg font-normal">FAQ</p>
+                            <p class="text-md md:text-lg font-normal">Contact Us</p>
+                            <p class="text-md md:text-lg font-normal">Terms of Service</p>
+                            <p class="text-md md:text-lg font-normal">
+                                <a href="/public/privacy.html" class="hover:text-stone-500">Privacy Policy</a>
+                            </p>
+                        </div>
+
+                        <!-- Quick Links Section -->
+                        <div id="section-8-quick-link-div"  class="w-1/3">
+                            <span class="text-xl font-bold mb-4 block">Quick Links</span>
+                            <p class="text-md md:text-lg font-normal">Home</p>
+                            <p class="text-md md:text-lg font-normal">Products</p>
+                            <p class="text-md md:text-lg font-normal">Events</p>
+                            <p class="text-md md:text-lg font-normal">Careers</p>
+                        </div>
+
+                        <!-- About Us Section -->
+                        <div id="section-8-about-us-div"  class="w-1/3">
+                            <span class="text-xl font-bold mb-4 block">About Us</span>
+                            <p class="text-md md:text-lg font-normal">Team</p>
+                            <p class="text-md md:text-lg font-normal">Partners</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media Icons -->
+                    <div id="section-8-social-div" class="flex w-full md:w-4/5 justify-around md:justify-end gap-8 max-md:my-4 ">
+                        <a href="https://www.facebook.com/profile.php?id=61571089575897" target="_blank">
+                            <img src="./images/facebook.png" alt="facebook" class="w-8 md:w-12 hover:animate-bounce">
+                        </a>
+                        <a href="https://www.instagram.com/eramlabs/" target="_blank">
+                            <img src="./images/instagram.png" alt="instagram" class="w-8 md:w-12 hover:animate-bounce">
+                        </a>
+                        <a href="https://www.youtube.com/@EramLabs" target="_blank">
+                            <img src="./images/youtube.png" alt="youtube" class="w-8 md:w-12 hover:animate-bounce">
+                        </a>
+                        <a href="https://www.linkedin.com/in/eram-labs-220344344/" target="_blank">
+                            <img src="./images/linkedIn.png" alt="linkedIn" class="w-8 md:w-12 hover:animate-bounce">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Office Location, Phone, and Email Section -->
+                <div id="section-8-company-div" class="w-full md:w-1/3 ">
+                    <div
+                        class="w-full flex max-sm:flex-col md:flex-col py-4 px-4 items-start text-white max-sm:space-y-4">
+                        <!-- Office Location Section -->
+                        <div class="w-full animate-slide-left">
+                            <div class="flex gap-4 items-start">
+                                <img src="./images/map.png" alt="map" class="w-12">
+                                <div>
+                                    <span class="text-md md:text-xl font-bold mb-4 block">Office Location</span>
+                                    <p class="text-md md:text-lg font-normal">163 - GF Pocket 2, Jasola</p>
+                                    <p class="text-md md:text-lg font-normal">New Delhi</p>
+                                    <p class="text-md md:text-lg font-normal">1100025</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Phone Number Section -->
+                        <div class="w-full animate-slide-left">
+                            <div class="flex gap-4 items-start">
+                                <img src="./images/phone.png" alt="phone" class="w-12">
+                                <div>
+                                    <span class="text-md md:text-xl font-bold mb-4 block">Phone Number</span>
+                                    <p class="text-md md:text-lg font-normal">+91-8750860676</p>
+                                    <p class="text-md md:text-lg font-normal">+91-88023 46983</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Email Address Section -->
+                        <div class="w-full animate-slide-right">
+                            <div class="flex gap-4 items-start">
+                                <img src="./images/location.png" alt="email" class="w-12">
+                                <div>
+                                    <span class="text-md md:text-xl font-bold mb-4 block">Email Address</span>
+                                    <p class="text-md md:text-lg font-normal">contact@roboguru.com</p>
+                                    <p class="text-md md:text-lg font-normal">admin@eramlabs.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Text Section -->
+            <div id="ai-innovation-footer">
+                <div class="flex text-white font-thin justify-center items-center">
+                    Empowering innovation with AI
+                </div>
+                <div class="flex text-white font-thin justify-center items-center">
+                    © 2024 Eram Labs. Designed by Eram Labs
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <style>
+    
+        /* Fade Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        /* Slide Animations */
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideLeft {
+            from {
+                transform: translateX(-20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideRight {
+            from {
+                transform: translateX(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Zoom Animations */
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes zoomOut {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+        }
+
+        /* Bounce Animations */
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes bounceIn {
+            from {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        /* Rotate Animations */
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes rotateIn {
+            from {
+                transform: rotate(-180deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes rotateOut {
+            from {
+                transform: rotate(0deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        /* Flip Animations */
+        @keyframes flip {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(180deg);
+            }
+        }
+
+        @keyframes flipIn {
+            from {
+                transform: rotateY(-90deg);
+                opacity: 0;
+            }
+
+            to {
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes flipOut {
+            from {
+                transform: rotateY(0deg);
+                opacity: 1;
+            }
+
+            to {
+                transform: rotateY(90deg);
+                opacity: 0;
+            }
+        }
+
+        /* Pulse Animations */
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        /* Shake Animations */
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            25%,
+            75% {
+                transform: translateX(-10px);
+            }
+
+            50% {
+                transform: translateX(10px);
+            }
+        }
+
+        /* Custom Animation Classes */
+        .animate-fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .animate-fade-out {
+            animation: fadeOut 1s ease-in-out;
+        }
+
+        .animate-slide-up {
+            animation: slideUp 1s ease-in-out;
+        }
+
+        .animate-slide-down {
+            animation: slideDown 1s ease-in-out;
+        }
+
+        .animate-slide-left {
+            animation: slideLeft 1s ease-in-out;
+        }
+
+        .animate-slide-right {
+            animation: slideRight 1s ease-in-out;
+        }
+
+        .animate-zoom-in {
+            animation: zoomIn 1s ease-in-out;
+        }
+
+        .animate-zoom-out {
+            animation: zoomOut 1s ease-in-out;
+        }
+
+        .animate-bounce {
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        .animate-bounce-in {
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        .animate-rotate {
+            animation: rotate 1s linear infinite;
+        }
+
+        .animate-rotate-in {
+            animation: rotateIn 1s ease-in-out;
+        }
+
+        .animate-rotate-out {
+            animation: rotateOut 1s ease-in-out;
+        }
+
+        .animate-flip {
+            animation: flip 1s ease-in-out;
+        }
+
+        .animate-flip-in {
+            animation: flipIn 1s ease-in-out;
+        }
+
+        .animate-flip-out {
+            animation: flipOut 1s ease-in-out;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .animate-shake {
+            animation: shake 0.5s ease-in-out;
+        }
+        
+    </style>
+    <script>
+  // Select all the sections
+  const sections = document.querySelectorAll('div');
+
+  const options = {
+    root: null,  // Use the viewport as the root
+    threshold: 0.01,  // Trigger when at least 10% of the section is in view
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+    // Add animation class when the section enters the viewport
+    if (entry.target.id === "section-1-image-div") {
+        entry.target.classList.add('animate-fade-in');
+    } else if (entry.target.id === "section-1-text-div") {
+        entry.target.classList.add('animate-slide-up');
+    } else if (entry.target.id === 'section-2-text-heading-div') {
+        entry.target.classList.add('animate-zoom-in');
+    } else if (entry.target.id === 'section-2-image-div') {
+        entry.target.classList.add('animate-slide-left');
+    } else if (entry.target.id === 'section-2-text-div') {
+        entry.target.classList.add('animate-slide-right');
+    } else if (entry.target.id === 'section-3-image-div') {
+        entry.target.classList.add('animate-rotate-in');
+    } else if (entry.target.id === 'section-3-text-div') {
+        entry.target.classList.add('animate-slide-up');
+    }else if (entry.target.id === 'section-5-text-div') {
+        entry.target.classList.add('animate-slide-down');
+    }else if (entry.target.id === 'section-5-button-1') {
+        entry.target.classList.add('animate-slide-left');
+    }else if (entry.target.id === 'section-5-button-2') {
+        entry.target.classList.add('animate-slide-right');
+    }else if (entry.target.id === 'section-7-heading-text') {
+        entry.target.classList.add('animate-slide-down');
+    }else if (entry.target.id === 'section-7-text-div') {
+        entry.target.classList.add('animate-slide-right');
+    }else if (entry.target.id === 'section-7-form-div') {
+        entry.target.classList.add('animate-slide-up');
+    }else if (entry.target.id === 'section-8-heading-text') {
+        entry.target.classList.add('animate-slide-down');
+    }else if (entry.target.id === 'section-8-support-div') {
+        entry.target.classList.add('animate-slide-right');
+    }else if (entry.target.id === 'section-8-quick-link-div') {
+        entry.target.classList.add('animate-slide-up');
+    }else if (entry.target.id === 'section-8-about-us-div') {
+        entry.target.classList.add('animate-slide-left');
+    }else if (entry.target.id === 'section-8-social-div') {
+        entry.target.classList.add('animate-slide-up');
+    }else if (entry.target.id === 'section-8-company-div') {
+        entry.target.classList.add('animate-slide-left');
+    }else if (entry.target.id === 'ai-innovation-footer') {
+        entry.target.classList.add('animate-slide-up');
+    }
+    
+        // Stop observing after the section has been animated
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+  function toggleAnswer(button) {
+    // Find the answer div inside the same FAQ item
+    const answer = button.nextElementSibling;
+
+    // Toggle hidden class
+    answer.classList.toggle("hidden");
+
+    // Update the toggle symbol (+/-)
+    const toggleSymbol = button.querySelector(".toggle-symbol");
+    toggleSymbol.textContent = toggleSymbol.textContent === "+" ? "−" : "+";
+  }
+  // Observe each section
+  sections.forEach(section => {
+    observer.observe(section);
+  })
+ 
+        document.addEventListener('DOMContentLoaded', () => {
+            const carousel = document.getElementById("carousel");
+            const prev = document.getElementById("prev");
+            const next = document.getElementById("next");
+            const indicators = document.querySelectorAll(".indicate");
+
+            let currentIndex = 0;
+            const slideCount = indicators.length;
+
+            // Function to update the carousel position and indicator styles
+            const updateCarousel = () => {
+                const boxWidth = carousel.children[0].offsetWidth; // Get width of one image
+                console.log("boxwidth", boxWidth)
+                carousel.style.transform = `translateX(-${currentIndex * boxWidth + 8}px )`; // Move carousel
+
+                // Update indicator styles
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.remove("bg-sky-300");
+                        indicator.classList.add("bg-sky-800");
+                    } else {
+                        indicator.classList.remove("bg-sky-800");
+                        indicator.classList.add("bg-gray-300");
+                    }
+                });
+            };
+
+            // Handle indicator click
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener("click", () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Handle previous button (circular navigation)
+            prev.addEventListener("click", () => {
+                currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+                updateCarousel();
+            });
+
+            // Handle next button (circular navigation)
+            next.addEventListener("click", () => {
+                currentIndex = (currentIndex + 1) % slideCount;
+                updateCarousel();
+            });
+
+            // Initial setup
+            updateCarousel();
+
+            // Resize event to handle responsive image width changes
+            window.addEventListener("resize", () => {
+                updateCarousel();
+            });
+        });
+
+
+        const header = document.getElementById("header");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                // Add classes when scrolled
+                header.classList.add("bg-white", "shadow-md", "text-black");
+                header.classList.remove("bg-transparent ", "text-white");
+            } else {
+                // Remove classes when at the top
+                header.classList.remove("bg-white", "shadow-md", "text-black");
+                header.classList.add("bg-transparent ", "text-white");
+            }
+        });
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const menu = document.getElementById("menu");
+        const menuIconHamburger = document.getElementById("icon-hamburger");
+        const menuIconClose = document.getElementById("icon-close");
+
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("hidden"); // Toggle the menu's visibility
+
+            // Toggle the visibility of the hamburger and close icons
+            menuIconHamburger.classList.toggle("hidden");
+            menuIconClose.classList.toggle("hidden");
+
+        });
+
+        const slider = document.getElementById("slider");
+        const indicators = document.querySelectorAll(".indicator");
+
+        let currentIndexVal = 0;
+        const slideCount = indicators.length;
+
+        // Function to update the slider position
+        const updateSlider = () => {
+            slider.style.transform = `translateX(-${currentIndexVal * 100}%)`;
+
+            // Update indicator styles
+            indicators.forEach((indicator, index) => {
+                if (index === currentIndexVal) {
+                    indicator.classList.remove("bg-gray-300");
+                    indicator.classList.add("bg-gray-800");
+                } else {
+                    indicator.classList.remove("bg-gray-800");
+                    indicator.classList.add("bg-gray-300");
+                }
+            });
+        };
+
+        // Automatic slide every 3 seconds
+        const autoSlide = () => {
+            currentIndexVal = (currentIndexVal + 1) % slideCount;
+            updateSlider();
+        };
+
+        let slideInterval = setInterval(autoSlide, 3000);
+
+        // Handle indicator click
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener("click", () => {
+                currentIndexVal = index;
+                updateSlider();
+
+                // Reset the interval to avoid skipping
+                clearInterval(slideInterval);
+                slideInterval = setInterval(autoSlide, 3000);
+            });
+        });
+
+        // Initial setup
+        updateSlider();
+
+    </script>
+</body>
+
+</html>
